@@ -3,10 +3,10 @@
   <channel>
     <title>Bernhard Scholz</title>
     <description>Homepage of A/Prof Bernhard Scholz. &lt;br&gt; The University of Sydney.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Sep 2015 22:45:21 +1000</pubDate>
-    <lastBuildDate>Mon, 21 Sep 2015 22:45:21 +1000</lastBuildDate>
+    <link>http://b-scholz.github.io/</link>
+    <atom:link href="http://b-scholz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 24 Sep 2015 05:21:31 +1000</pubDate>
+    <lastBuildDate>Thu, 24 Sep 2015 05:21:31 +1000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;Hello world!&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Sep 2015 19:14:02 +1000</pubDate>
-        <link>/jekyll/update/2015/09/21/my-first-post.html</link>
-        <guid isPermaLink="true">/jekyll/update/2015/09/21/my-first-post.html</guid>
+        <link>http://b-scholz.github.io/jekyll/update/2015/09/21/my-first-post.html</link>
+        <guid isPermaLink="true">http://b-scholz.github.io/jekyll/update/2015/09/21/my-first-post.html</guid>
         
         
         <category>jekyll</category>

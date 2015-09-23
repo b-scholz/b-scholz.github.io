@@ -10,8 +10,8 @@
   <meta name="description" content="Homepage of A/Prof Bernhard Scholz. <br> The University of Sydney.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/bibliography/lctes08.html">
-  <link rel="alternate" type="application/rss+xml" title="Bernhard Scholz" href="/feed.xml" />
+  <link rel="canonical" href="http://b-scholz.github.io/bibliography/1375663.html">
+  <link rel="alternate" type="application/rss+xml" title="Bernhard Scholz" href="http://b-scholz.github.io/feed.xml" />
 </head>
 
 
@@ -33,6 +33,8 @@
       </a>
 
       <div class="trigger">
+        
+          
         
           
           <a class="page-link" href="/blog.html">My Blog</a>
@@ -66,6 +68,114 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       </div>
     </nav>
 
@@ -93,44 +203,33 @@ div.pdfimg{
 </style>
 
 
-<h3><center>Generalized Instruction Selection Using SSA-graphs</center></h3>
+<h3><center>Generalized instruction selection using SSA-graphs</center></h3>
 <h4><center>Ebner, Dietmar and Brandner, Florian and Scholz, Bernhard and Krall, Andreas and Wiedermann, Peter and Kadlec, Albrecht</center></h4>
 <hr>
 
 <div class="pdfimg">
-	<a href="/pdf/lctes08.pdf">
-		<img src="/pdf/lctes08.png" width="300">
+	<a href="/pdf/1375663.pdf">
+		<img src="/pdf/1375663.png" width="300">
 	</a>
 </div>
 
-Instruction selection is a well-studied compiler phase that translates the compiler’s intermediate representation of programs to a sequence of target-dependent machine instructions optimizing for various compiler objectives (e.g. speed and space). Most existing instruction selection techniques are limited to the scope of a single statement or a basic block and cannot cope with irregular instruction sets that are frequently found in embedded systems.
 
-We consider an optimal technique for instruction selection that uses Static Single Assignment (SSA) graphs as an intermediate representation of programs and employs the Partitioned Boolean Quadratic Problem (PBQP) for finding an optimal instruction selection. While existing approaches are limited to instruction patterns that can be expressed in a simple tree structure, we consider complex patterns producing multiple results at the same time including pre/post increment addressing modes, div-mod instructions, and SIMD extensions frequently found in embedded systems. Although both instruction selection on SSA-graphs and PBQP are known to be NP-complete, the problem can be solved efficiently - even for very large instances.
-
-Our approach has been implemented in LLVM for an embedded ARMv5 architecture. Extensive experiments show speedups of up to 57% on typical DSP kernels and up to 10% on SPECINT 2000 and MiBench benchmarks. All of the test programs could be compiled within less than half a minute using a heuristic PBQP solver that solves 99.83% of all instances optimally.
 
 <div style="clear:both"></div>
 
 <hr>
 <pre>
-	<div class="highlight"><pre><code class="language-tex" data-lang="tex">@article<span class="nb">{</span>lctes08,
+	<div class="highlight"><pre><code class="language-tex" data-lang="tex">@inproceedings<span class="nb">{</span>1375663,
   author = <span class="nb">{</span>Ebner, Dietmar and Brandner, Florian and Scholz, Bernhard and Krall, Andreas and Wiedermann, Peter and Kadlec, Albrecht<span class="nb">}</span>,
-  title = <span class="nb">{</span>Generalized Instruction Selection Using SSA-graphs<span class="nb">}</span>,
-  journal = <span class="nb">{</span>SIGPLAN Not.<span class="nb">}</span>,
-  issue<span class="nb">_</span>date = <span class="nb">{</span>July 2008<span class="nb">}</span>,
-  volume = <span class="nb">{</span>43<span class="nb">}</span>,
-  number = <span class="nb">{</span>7<span class="nb">}</span>,
-  month = jun,
+  title = <span class="nb">{</span>Generalized instruction selection using SSA-graphs<span class="nb">}</span>,
+  booktitle = <span class="nb">{</span>LCTES &#39;08: Proceedings of the 2008 ACM SIGPLAN-SIGBED conference on Languages, compilers, and tools for embedded systems<span class="nb">}</span>,
   year = <span class="nb">{</span>2008<span class="nb">}</span>,
-  issn = <span class="nb">{</span>0362-1340<span class="nb">}</span>,
+  isbn = <span class="nb">{</span>978-1-60558-104-0<span class="nb">}</span>,
   pages = <span class="nb">{</span>31--40<span class="nb">}</span>,
-  numpages = <span class="nb">{</span>10<span class="nb">}</span>,
-  url = <span class="nb">{</span>http://doi.acm.org/10.1145/1379023.1375663<span class="nb">}</span>,
-  doi = <span class="nb">{</span>10.1145/1379023.1375663<span class="nb">}</span>,
-  acmid = <span class="nb">{</span>1375663<span class="nb">}</span>,
+  location = <span class="nb">{</span>Tucson, AZ, USA<span class="nb">}</span>,
+  doi = <span class="nb">{</span>http://doi.acm.org/10.1145/1375657.1375663<span class="nb">}</span>,
   publisher = <span class="nb">{</span>ACM<span class="nb">}</span>,
-  address = <span class="nb">{</span>New York, NY, USA<span class="nb">}</span>,
-  keywords = <span class="nb">{</span>code generation, compiler, instruction selection, pbqp<span class="nb">}</span>
+  address = <span class="nb">{</span>New York, NY, USA<span class="nb">}</span>
 <span class="nb">}</span></code></pre></div>
 </pre>
 
@@ -140,6 +239,9 @@ Our approach has been implemented in LLVM for an embedded ARMv5 architecture. Ex
 
       </div>
     </div>
+
+    
+
 
     <footer class="site-footer">
 
