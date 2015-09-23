@@ -5,13 +5,24 @@
     <description>Homepage of A/Prof Bernhard Scholz. &lt;br&gt; The University of Sydney.</description>
     <link>http://b-scholz.github.io/</link>
     <atom:link href="http://b-scholz.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Sep 2015 05:41:35 +1000</pubDate>
-    <lastBuildDate>Thu, 24 Sep 2015 05:41:35 +1000</lastBuildDate>
+    <pubDate>Thu, 24 Sep 2015 07:45:58 +1000</pubDate>
+    <lastBuildDate>Thu, 24 Sep 2015 07:45:58 +1000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>My First Post</title>
         <description>&lt;p&gt;Hello world!&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A^2 = B^2&lt;/script&gt;
+
+&lt;p&gt;This is a code block&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+for i=1 to 100
+do
+  print i
+end
+&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Sep 2015 19:14:02 +1000</pubDate>
         <link>http://b-scholz.github.io/jekyll/update/2015/09/21/my-first-post.html</link>

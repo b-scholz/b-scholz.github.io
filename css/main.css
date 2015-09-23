@@ -142,6 +142,15 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+/***
+ * MathJax
+ */
+code.has-jax {
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
+  border: inherit; }
+
 /**
  * Site header
  */
