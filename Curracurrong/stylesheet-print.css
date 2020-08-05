@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background: transparent;
+	font-family: Verdana, Arial;
+	font-size: 12pt;
+}
+
+#heading {
+	display: none;
+}
+
+#container {
+	display: block;
+	width: 100%;
+}
+#container2 {
+	display: block;
+}
+
+#menu-container {
+	display: none;
+}
+
+#content-container {
+	display: block;
+}

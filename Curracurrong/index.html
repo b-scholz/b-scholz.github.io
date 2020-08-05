@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="university of sydney, curracurrong, sunspot, usyd, wireless sensor networks, wsn" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link type="text/css" rel="stylesheet" media="screen" href="stylesheet.css" />
+<link type="text/css" rel="stylesheet" media="print" href="stylesheet-print.css" />
+<title>Curracurrong-Stream Programming Environment</title>
+</head>
+
+<body>
+<div id="heading">
+	<img src="Images/curracurrong.jpg" alt="Curracurrong logo" height="150" width="150" />
+</div>
+
+<div id="container">
+	<div id="container2">
+		<div id="menu-container">
+			<div class="menu-item-selected"><a href="index.html">Home</a></div>
+			<div class="menu-item"><a href="Download.html">Download</a></div>
+			<div class="menu-item"><a href="Docs.html">Docs</a></div>
+			<div class="menu-item"><a href="Aboutus.html">About Us</a></div>
+			<div id="usydlogo"><a href="http://www.it.usyd.edu.au"><img src="Images/usyd-bw.png" alt="USYD Logo" height="82" width="88" /></a></div>
+		</div>
+		<div id="content-container">
+			<h1>Curracurrong </h1>
+			<p>
+			Curracurrong is a light-weight <span class="italic">stream query processing engine</span> designed for distributed environments, developed at the <a href="http://www.it.usyd.edu.au">School of IT</a> at the 
+			<a href="http://www.usyd.edu.au">University of Sydney</a>. The system architecture and implementation is intended to provide a good trade-off between productivity, flexibility, and energy-efficiency. Productivity is obtained with new query language for stream processing, where computation is represented in the form of a stream graph. Nodes in the stream graph represent computation elements called stream operators and edges represent FIFO channels between operators. 
+			</p>
+			<p>
+			The model hierarchically composes stream graphs built from individual operators that may be filters, pipelines, and splitters-joiners, similar to other stream programming languages such as <span class="italic">StreamIt</span>. The system supports data rate annotations for stream operators that allows static computations of communication bandwidths. An extensible stream operator library offers flexibility in designing complex applications.
+			</p>
+			<p>
+			Curracurrong system has two main components: a <span class="italic">server </span> that 
+            works as a query processor; and <span class="italic"> run-time environment </span> which 
+            has <span class="italic">administrator, communicator, </span> and 
+            <span class="italic">scheduler</span>. User-written queries are translated by the server and operators
+            are energy-efficiently deployed on SunSPOT sensor nodes. Each SunSPOT node has run-time environment that receieves and sends
+            administrative messages, communicates with other other nodes and schedules operator execution on the node. 
+            An example query and corresponding stream graph in Curracurrong would be:
+		  </p>
+			<pre class="sql">
+            query Average =
+                (Sense[node="1.1.1.1", rate=100] ->
+                Select[field=3] ->
+                AverageFilter[window=5] |
+                Sense[node="1.1.1.2", rate=50] ->
+                Select[field=3] ->
+                AverageFilter[window=5] |
+                Sense[node="1.1.1.3", rate=200] ->
+                Select[field=3] ->
+                AverageFilter[window=5])
+			</pre>
+			<center>
+            <img src="Images/streamgraph.jpg" alt="StreamGraph" width="163" height="180">
+			</center>
+		  <p>
+			Some features of Curracurrong include:
+			</p>
+			<ul>
+				<li>In-network data processing</li>
+                <li>Energy-efficient operator placement</li>
+				<li>Time triggered query execution</li>
+				<li>Query visualization</li>
+				<li>Easily extendable built-in operator library</li>
+				<li>Easily extendable (custom sensors, custom data types, etc)</li>
+			</ul>
+                <p> This work was sponsored by the grant "Computing with nearly-consistent data", Fekete A, Scholz B; Australian Research Council (ARC)/Discovery Projects (DP)  DP1096445.
+                </p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+

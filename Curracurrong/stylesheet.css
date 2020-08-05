@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #000000 url(images/sun-single.png) no-repeat fixed bottom left;
+	font-family: Verdana, Arial;
+	font-size: 12pt;
+}
+
+a, a:visited {
+	color: #6badf3;
+	outline: none;
+	text-decoration: none;
+}
+	a img {
+		border: 0;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+
+h1, h2 {
+	margin: 5px 0 0.7em 0;
+}
+h2 {
+	margin-top: 1em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+li {
+	margin-left: 1.5em;
+}
+
+pre.sql {
+	margin-left: 2em;
+	padding: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+
+#heading {
+	width: 100%;
+	text-align: center;
+}
+	#heading img {
+		margin: 1em auto;
+	}
+
+#container {
+	display: table;
+	width: 100%;
+}
+#container2 {
+	display: table-row;
+}
+
+#menu-container {
+	display: table-cell;
+	width: 280px;
+}
+	#menu-container .menu-item {
+		font-size: 13pt;
+		padding: 0.8em 0 0.8em 0.5em;
+		margin: 0 0 0 30px;
+	}
+		#menu-container .menu-item:hover {
+			background: url(Images/menu-gradient.jpg) repeat-y top right;
+		}
+	#menu-container a {
+		text-decoration: underline;
+		color: #ffffff;
+	}
+	#menu-container .menu-item-selected {
+		background: url(Images/menu-gradient.jpg) repeat-y top right;
+		font-size: 13pt;
+		margin: 0 0 0 10px;
+		padding: 0.8em 0 0.8em 0.5em;
+	}
+
+#content-container {
+	color: #cccccc;
+	display: table-cell;
+	padding: 1em;
+	width: auto;
+}
+
+#usydlogo {
+	text-align: center;
+}
+	#usydlogo img {
+		margin-top: 1em;
+	}
+
+.peoplelist span {
+	font-size: 8pt;
+}	
